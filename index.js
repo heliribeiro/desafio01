@@ -24,6 +24,7 @@ server.use(express.json())
 
 server.use((req,res,next)=>{
   console.log(`O número de requisições feitas é:${++countReq}`)
+  console.count('contando o numero de requisições')
   next()
 })
 
